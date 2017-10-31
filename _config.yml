@@ -1,0 +1,8 @@
+# Permalinks
+permalink: pretty
+
+# Setup
+title: "This day’s portion"
+lang: en-gb
+sass:
+  style: compressed

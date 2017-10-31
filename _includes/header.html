@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html{% if site.lang %} lang="{{ site.lang }}"{% endif %}>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {% if site.title %}<title>{{ site.title }}</title>{% endif %}
+
+        <link rel="alternate" type="application/atom+xml" {% if site.title %}title="{{ site.title }}"{% endif %} {% if site.lang %} hreflang="{{ site.lang }}"{% endif %} href="/feed/index.xml">
+
+        <link rel="stylesheet" href="/css/style.css">
+
+    </head>
+
+    <body>
+
+        {% if site.title %}<h1><a href="/">{{ site.title }}</a></h1>{% endif %}
